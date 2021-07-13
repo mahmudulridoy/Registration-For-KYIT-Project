@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body{
+    font-family: "Oswald";
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header_area{
+    overflow: hidden;
+}
+.header_left{
+    float: left;
+}
+.header_right{
+    float: right;
+}
+.header_right img{
+    width: 120px;
+    margin-top: 15px;
+    display: block;
+}
+.header_right a{
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #0054A6;
+    color: #fff;
+    padding: 10px 13px; 
+}
+.headline{
+    border-bottom: 1px solid #B4CE45;
+    margin-top: 10px;
+    padding-bottom: 3px;
+}
+.headline h2{
+    color: #5D4FA1;
+    margin-bottom: 5px;
+}
+#course{
+    width: 250px;
+    border: 1px solid #B4CE45;
+}
+#name{
+    border: 1px solid #B4CE45;
+    width: 350px;
+}
+#national{
+    border: 1px solid #B4CE45;
+    width: 250px;
+}
+.same_all{
+    overflow: hidden;
+}
+.same_inp{
+    float: left;
+    margin-right: 20px;
+}
+.same_inp input,.same_inp select{
+    width: 250px;
+    border: 1px solid #B4CE45;
+}
+.two_inp{
+    overflow: hidden;
+}
+.same_two{
+    float: left;
+    margin-right: 20px;
+}
+.same_two input,.same_two select{
+    width: 390px;
+    border: 1px solid #B4CE45;
+}
+.other{
+    overflow: hidden;
+}
+.other_inp{
+    float: left;
+    margin-right: 50px;
+}
+.other_inp1{
+    float: left;
+}
+.other_inp1 input{
+    width: 600px;
+    border: 1px solid #B4CE45;
+}
+.head_area{
+    border-bottom: 1px solid #999999;
+    margin: 10px 0;
+    width: 810px;
+}
+.head_area h4{
+    color: #999999;
+}
+.one input{
+    width: 810px;
+    border: 1px solid #B4CE45;
+}
+#code{
+    border: 1px solid #B4CE45;
+    width: 250px;
+}
+.last{
+    overflow: hidden;
+}
+.last-left{
+    float: left;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+.last-right{
+    float: left;
+}
+#reset{
+    padding: 5px 20px;
+    border: none;
+    background-color: #DDDBD4;
+    border: #DDDBD4;
+    margin-right: 10px;
+}
+#save{
+    padding: 5px 20px;
+    border: none;
+    background-color: #B4CE45;
+    border: #B4CE45;
+}
+.submit{
+    text-align: center;
+    margin-bottom: 50px;
+}
+    </style>
+    <!-- end to css  -->
+</head>
+<body>
+    <div class="container">
+        <div class="header_area">
+            <div class="header_left">
+                <img src="img/logo.png" alt="BITM LOGO">
+            </div>
+            <div class="header_right">
+                <img src="img/basis_log.png" alt="BASIC LOGO"><br>
+                <a href="index.html">HOME</a>
+            </div>
+        </div>
+        <div class="headline">
+            <h2>Registration for KYIT Project</h2>
+        </div>
+        <div class="title">
+            <p>Select Course:(One person will be eligible for one course only)</p>
+        </div>
+        <form>
+            <label>First Preference*:</label>
+            <select name="course" id="course">
+                <option value="0">Select Course</option>
+            </select><br><br>
+            <label>Name:*</label><br>
+            <input type="text" id="name"><br><br>
+            <div class="same_all">
+                <div class="same_inp">
+                    <label>Father Name:*</label><br>
+                    <input type="text">
+                </div>
+                <div class="same_inp">
+                    <label>Mother Name:*</label><br>
+                    <input type="text">
+                </div>
+                <div class="same_inp">
+                    <label>Gender:*</label><br>
+                    <select name="gender" id="gen">
+                        <option value="0">Select Gender</option>
+                    </select>
+                </div>
+            </div>
+            <label>National ID</label><br>
+            <input type="text" id="national"><br><br>
+            <div class="same_all">
+                <div class="same_inp">
+                    <label>Date of Birth:*</label><br>
+                    <input type="text">
+                </div>
+                <div class="same_inp">
+                    <label>Religion:*</label><br>
+                    <select name="rel" id="rel">
+                        <option value="0">Select Religion</option>
+                    </select>
+                </div>
+                <div class="same_inp">
+                    <label>Ethnic Group:*</label><br>
+                    <select name="rel" id="rel">
+                        <option value="0">Select Religion</option>
+                    </select>
+                </div>
+            </div><br>
+            <div class="two_inp">
+                <div class="same_two">
+                    <label>Mobile:*</label><br>
+                    <input type="text">
+                </div>
+                <div class="same_two">
+                    <label>Email:*</label><br>
+                    <input type="text">
+                </div>
+            </div><br>
+            <div class="other">
+                <div class="other_inp">
+                    <br>
+                    Is Employed? <input type="radio"> Yes <input type="radio"> No
+                </div>
+                <div class="other_inp1">
+                    <label>Monthly Income:</label><br>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="head_area">
+                <h4>Present Address</h4>
+            </div>
+            <div class="one">
+                <label>Address:*</label><br>
+                <input type="text">
+            </div><br>
+            <div class="two_inp">
+                <div class="same_two">
+                    <label>City:*</label><br>
+                    <input type="text">
+                </div>
+                <div class="same_two">
+                    <label>Post Code:*</label><br>
+                    <input type="text">
+                </div>
+            </div><br>
+            <div class="same_all">
+                <div class="same_inp">
+                    <label>Division:*</label><br>
+                    <select name="div" id="div">
+                        <option value="0">Select Division</option>
+                    </select>
+                </div>
+                <div class="same_inp">
+                    <label>District:*</label><br>
+                    <select name="rel" id="rel">
+                        <option value="0">Select District</option>
+                    </select>
+                </div>
+                <div class="same_inp">
+                    <label>Sub-District:*</label><br>
+                    <select name="rel" id="rel">
+                        <option value="0">Select Sub-District</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head_area">
+                <h4>Permanent Address</h4>
+            </div>
+            <div class="one">
+                <label>Address:*</label><br>
+                <input type="text">
+            </div><br>
+            <div class="two_inp">
+                <div class="same_two">
+                    <label>City:*</label><br>
+                    <input type="text">
+                </div>
+                <div class="same_two">
+                    <label>Post Code:*</label><br>
+                    <input type="text">
+                </div>
+            </div><br>
+            <div class="same_all">
+                <div class="same_inp">
+                    <label>Division:*</label><br>
+                    <select name="div" id="div">
+                        <option value="0">Select Division</option>
+                    </select>
+                </div>
+                <div class="same_inp">
+                    <label>District:*</label><br>
+                    <select name="rel" id="rel">
+                        <option value="0">Select District</option>
+                    </select>
+                </div>
+                <div class="same_inp">
+                    <label>Sub-District:*</label><br>
+                    <select name="rel" id="rel">
+                        <option value="0">Select Sub-District</option>
+                    </select>
+                </div>
+            </div>
+            <div class="head_area">
+                <h4>Highest Academic Achievement</h4>
+            </div>
+            <div class="two_inp">
+                <div class="same_two">
+                    <label>Level of Education:</label><br>
+                    <input type="text">
+                </div>
+                <div class="same_two">
+                    <label>Institute:</label><br>
+                    <input type="text">
+                </div>
+            </div><br>
+            <div class="two_inp">
+                <div class="same_two">
+                    <label>Subject:</label><br>
+                    <input type="text">
+                </div>
+                <div class="same_two">
+                    <label>Year:</label><br>
+                    <input type="text">
+                </div>
+            </div><br>
+            <div class="head_area">
+                <h4>Photo</h4>
+            </div>
+            <div class="image">
+                <input type="file"><br>
+                <label>Image size should be 300x300 (Max 100KB) in JPG Format</label>
+            </div>
+            <div class="head_area">
+                <h4>Security</h4>
+            </div>
+            <div class="last">
+                <div class="last-left">
+                    <label>Name:*</label><br>
+                    <input type="text" id="code"><br><br>
+                </div>
+                <div class="last-right">
+                    <br>
+                    <img src="img/1625885405.2357.jpg" alt="code">
+                </div>
+            </div>
+            <div class="submit">
+                <input type="reset" id="reset" value="Reset">
+                <input type="submit" id="save" value="Save">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
